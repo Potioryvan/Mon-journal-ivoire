@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporter Investigation | Côte d'Ivoire</title>
+    <style>
+        /* Design Global */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+        header { background-color: #1a1a1a; color: #fff; padding: 2rem 5%; text-align: center; border-bottom: 4px solid #ff8c00; }
+        header h1 { margin: 0; letter-spacing: 2px; text-transform: uppercase; font-size: 2.5rem; }
+        header p { color: #ff8c00; font-style: italic; margin-top: 5px; }
+
+        /* Navigation */
+        nav { background: #fff; padding: 10px 5%; display: flex; justify-content: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav a { margin: 0 15px; text-decoration: none; color: #333; font-weight: bold; transition: 0.3s; }
+        nav a:hover { color: #ff8c00; }
+
+        /* Conteneur Principal */
+        .container { max-width: 1100px; margin: 2rem auto; padding: 0 20px; }
+
+        /* Article à la Une */
+        .featured-article { background: #fff; display: flex; flex-wrap: wrap; margin-bottom: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; }
+        .featured-img { flex: 1; min-width: 300px; background: url('https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=800&q=80') center/cover; min-height: 300px; }
+        .featured-content { flex: 1; padding: 2rem; min-width: 300px; }
+        .tag { background: #ff8c00; color: #fff; padding: 5px 10px; font-size: 0.8rem; border-radius: 3px; text-transform: uppercase; }
+        .featured-content h2 { font-size: 1.8rem; margin: 15px 0; line-height: 1.2; }
+        .featured-content p { line-height: 1.6; color: #666; }
+        .btn { display: inline-block; background: #1a1a1a; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 15px; transition: 0.3s; }
+        .btn:hover { background: #ff8c00; }
+
+        /* Grille d'articles secondaires */
+        .article-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card-img { height: 200px; width: 100%; background-color: #ddd; }
+        .card-body { padding: 1.5rem; }
+        .card-body h3 { margin: 0 0 10px 0; font-size: 1.3rem; }
+
+        footer { background: #1a1a1a; color: #fff; text-align: center; padding: 2rem; margin-top: 4rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>LE REPORTER IVOIRIEN</h1>
+    <p>Oser dire, oser enquêter.</p>
+</header>
+
+<nav>
+    <a href="#">Accueil</a>
+    <a href="#">Enquêtes</a>
+    <a href="#">Éducation</a>
+    <a href="#">Politique</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <div class="featured-article">
+        <div class="featured-img"></div>
+        <div class="featured-content">
+            <span class="tag">Investigation</span>
+            <h2>L’apologie de la médiocrité : Le cri de cœur d'une jeunesse en quête de repères</h2>
+            <p>Entre l'affaire des concours de la Douane et la protection des figures polémiques, nous avons enquêté sur le sentiment d'injustice qui gagne la Côte d'Ivoire...</p>
+            <a href="#" class="btn">Lire l'enquête complète</a>
+        </div>
+    </div>
+
+    <div class="article-grid">
+        <div class="card">
+            <div class="card-img" style="background: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=400&q=80') center/cover;"></div>
+            <div class="card-body">
+                <span class="tag" style="font-size: 0.6rem;">Société</span>
+                <h3>L'école mène-t-elle encore à la réussite ?</h3>
+                <p>Analyse profonde du décalage entre les diplômes universitaires et le marché de l'emploi à Abidjan.</p>
+                <a href="#" class="btn">Détails</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-img" style="background: url('https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?auto=format&fit=crop&w=400&q=80') center/cover;"></div>
+            <div class="card-body">
+                <span class="tag" style="font-size: 0.6rem;">Portrait</span>
+                <h3>Gérant de cabine et Master en poche</h3>
+                <p>Portrait de ces jeunes Ivoiriens qui réinventent la réussite loin des bureaux de l'administration.</p>
+                <a href="#" class="btn">Détails</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Reporter Ivoirien - Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
